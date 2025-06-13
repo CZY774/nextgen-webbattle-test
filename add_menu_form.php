@@ -18,7 +18,7 @@
                     <input type="text" name="name" placeholder="Nama" id="">
                 </p>
                 <p>
-                    <input type="submit" value="Daftar" name="Daftar">
+                    <input type="submit" value="Daftar" name="daftar">
                 </p>
             </fieldset>
         </form>

@@ -2,7 +2,7 @@
 include "config.php";
 if(isset($_POST['daftar'])) {
     $name = $_POST['name'];
-    $userId = 2;
+    $userId = 1;
 
     $sql = "INSERT INTO menus (name, user_id, created_at) VALUES ('$name', '$userId', now())";
     $query = mysqli_query($db, $sql);

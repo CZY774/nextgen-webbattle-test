@@ -1,3 +1,5 @@
+<?php include "config.php"?>;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,8 +32,8 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT menus.*, users.name as user_name FROM menus inner join users on menyus.user_id=users.id";
-            $query = mysqli_query($db, $query);
+            $sql = "SELECT menus.*, users.name as user_name FROM menus inner join users on menus.user_id=users.id";
+            $query = mysqli_query($db, $sql);
 
             while($menu = mysqli_fetch_array($query)) {
                 echo "<tr>";
@@ -50,6 +52,6 @@
         </tbody>
     </table>
 
-    <h3>Total: <?php echo mysqli_num_rows($query) ?></h3>
+    <h3>Total: <?php echo mysqli_num_rows($query) ?> Menu</h3>
 </body>
 </html>
